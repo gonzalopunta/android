@@ -8,7 +8,7 @@ import retrofit2.http.Query
 interface ActoresService {
 
     @GET ("person/popular")
-    fun listadoActores(): Call<List<ActoresResponse>>
+    fun listadoActores(): Call<ActoresResponse>
 
     @GET("person/{id}")
     fun getDetailActor(@Query("id") id: Int)
